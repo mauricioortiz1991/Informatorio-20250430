@@ -63,5 +63,5 @@
 # tupla = ('Gerardo', 'Andres', 'Ainara', 3, 1)
 # print(tupla[0])
 
-diccionario = {45302258: 'Pablo Perez', 45825693: 'Pablo Granados'}
-print(diccionario[45825693])
+# diccionario = {45302258: 'Pablo Perez', 45825693: 'Pablo Granados'}
+# print(diccionario[45825693])
