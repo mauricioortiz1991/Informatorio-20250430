@@ -39,7 +39,7 @@
 # while True:
 #     print('Sigo ejecutando...')
 
-contador = 0
-while (contador != 5):
-    print('contador vale:', contador)
-    contador = contador + 1
+# contador = 0
+# while (contador != 5):
+#     print('contador vale:', contador)
+#     contador = contador + 1
