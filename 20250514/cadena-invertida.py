@@ -1,8 +1,9 @@
 # Se ingresa por pantalla una cadena y se debe invertirla.
 # No se puede usar [::-1] ni reverse.
+# Si la palabra que se ingreso es capicua/polidromo.
 
 cadena = input('Ingrese una palabra u oracion:')
-invertida = 
+invertida = ""
 # Hola
 # h
 # inverida = h(letra) + ''(invertida)
@@ -16,4 +17,9 @@ invertida =
 for letra in cadena:
     invertida = letra + invertida
 
-    print(invertida)
+print(f"La cadena invertida se ve como: {invertida}")
+
+if (invertida == cadena):
+    print(f"La palabra {cadena} es capicua/polidromo")
+else:
+    print(f"La palabra {cadena} NO es capicua/polidromo")
