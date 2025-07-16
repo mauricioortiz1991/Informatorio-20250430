@@ -5,11 +5,11 @@ def calcular_suma():
     expresion = entrada.get()
     print(expresion)
     try:
-        if all(char in "0123456789+" for char in expresion):
+        if all(char in "0123456789+-*/" for char in expresion):
             resultado = eval(expresion)
             resultado_var.set(f"Resultado: {resultado}")
         else:
-            resultado_var.set("Solo se permiten numeros y +")
+            resultado_var.set("Solo se permiten numeros y (+, -, *, /)")
     except:
         resultado_var.set("Error en la expresion")
 
@@ -24,7 +24,7 @@ ventana.geometry("300x200")
 entrada = tk.StringVar()
 resultado_var = tk.StringVar()
 
-tk.Label(ventana, text="Ingrese numeros a sumar (ej: 2+3+5):").pack(pady=10)
+tk.Label(ventana, text="Ingrese numeros a calcular (ej: 2+3, 5*5):").pack(pady=10)
 tk.Entry(ventana, textvariable=entrada, font=("Arial", 14), justify="center").pack(pady=5)
 
 tk.Button(ventana, text="Calcular", command=calcular_suma).pack(pady=5)
